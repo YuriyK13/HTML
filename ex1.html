@@ -13,7 +13,7 @@
 
     <body>
 
-    <div class="container-fluid table-bordered">
+    <div class="container-fluid">
         <div class="raw">
 
          <!-- 1 блок -->
@@ -60,7 +60,7 @@
                     </td>
                 </tr>
                 <tr align="center" valign="top">
-                    <td colspan="2" class="text-center fw-bold text-primary bg-warning w-25 p-0"><b>Редактировать свитч</b></td>
+                    <td colspan="2" class="text-center"><button type="button" class="btn btn-warning text-primary fw-bold">Редактировать свитч</button></td>
                 </tr>
 
                 </tbody>
@@ -70,15 +70,18 @@
 
         <!-- 2 блок -->
 
-        <div class="d-grid gap-1" style="--bs-columns: 3;">
-            <div>Управление:</div>
-            <div class = 'border border-dark'>Перезагрузить</div>
-            <div class = 'border border-dark'>Попингуй</div>
-            <div class = 'border border-dark'>MAC-Адреса с портов</div>
-            <div class = 'border border-dark'>Расположение свитча</div>
-            <div class = 'border border-dark'>Консоль телнет</div>
-            <div class = 'border border-dark bg-danger'>Отхуярить всех абонов ногами в живот</div>
-        </div> <br>
+        <div class="d-grid gap-1 col-6">
+            <div class="fw-bold">Управление:</div>
+                <button type="button" class="btn btn-sm btn-outline-secondary">Перезагрузить</button>
+                <button type="button" class="btn btn-sm btn-outline-secondary">Попингуй</button>
+                <button type="button" class="btn btn-sm btn-outline-secondary">MAC-Адреса с портов</button>
+                <button type="button" class="btn btn-sm btn-outline-secondary">Расположение свитча</button>
+                <button type="button" class="btn btn-sm btn-outline-secondary">Консоль телнет</button>
+                <button type="button" class="btn btn-sm btn-danger border border-dark ">Отхуярить всех абонов ногами в живот</button>
+            </div>
+
+        </div>
+        <br>
 
         <!-- 3 блок -->
 
@@ -93,85 +96,122 @@
 
     <div class="container-fluid">
 
-        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-6 row-cols-lg-7 row-cols-xl-8">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-6 row-cols-lg-7 row-cols-xl-8 ">
 <!--        <div class="col-xl-6 col-md-6 col-sm-12 col-lg-6 w-25 p-1">-->
 
-            <div>
-                <p class="fs-6 lh-1 text-center bg-success">1</p>
-                <p class="fs-6 lh-1">Шишко Василий Николаевич (8296)</p>
-                <p class="fs-6 lh-1 text-secondary">пр. Лесной 20, кв.96</p>
-                <p class="fs-6 lh-1 text-success">100Mbps</p>
-                <button type="button" class="btn btn-light">Вкл.</button>
+            <div class="card" style="width: 8rem;">
+                <div>
+                    <p class="fs-6 lh-1 text-center bg-success">1</p>
+                    <p class="fs-6 lh-1">Шишко Василий Николаевич (8296)</p>
+                </div>
+                <div>
+                    <p class="fs-6 lh-1 text-secondary">пр. Лесной 20, кв.96</p>
+                    <p class="fs-6 lh-1 text-success">100Mbps</p>
+                    <button type="button" class="btn btn-success">Вкл.</button>
+                </div>
+
             </div>
 
-            <div>
-                <p class="fs-6 lh-1 text-center bg-danger">2</p>
-                <p class="fs-6 lh-1">Пушко Иван Николаевич (8297)</p>
-                <p class="fs-6 lh-1 text-secondary">пр. Лесной 20, кв.97</p>
-                <p class="fs-6 lh-1 text-danger">0Mbps</p>
-                <button type="button" class="btn btn-light">Выкл.</button>
+            <div class="card" style="width: 8rem;">
+                <div>
+                    <p class="fs-6 lh-1 text-center bg-danger">2</p>
+                    <p class="fs-6 lh-1">Пушко Иван Николаевич (8297)</p>
+                </div>
+                <div>
+                    <p class="fs-6 lh-1 text-secondary">пр. Лесной 20, кв.97</p>
+                    <p class="fs-6 lh-1 text-danger">0Mbps</p>
+                    <button type="button" class="btn btn-danger">Выкл.</button>
+                </div>
             </div>
 
-            <div>
-                <p class="fs-6 lh-1 text-center bg-danger">3</p>
-                <p class="fs-6 lh-1">Смешко Лариса Батьковна (8298)</p>
-                <p class="fs-6 lh-1 text-secondary">пр. Лесной 20, кв.98</p>
-                <p class="fs-6 lh-1 text-danger">0Mbps</p>
-                <button type="button" class="btn btn-light">Выкл.</button>
+            <div class="card" style="width: 8rem;">
+                <div>
+                    <p class="fs-6 lh-1 text-center bg-danger">3</p>
+                    <p class="fs-6 lh-1">Смешко Лариса Батьковна (8298)</p>
+                </div>
+                <div>
+                    <p class="fs-6 lh-1 text-secondary">пр. Лесной 20, кв.98</p>
+                    <p class="fs-6 lh-1 text-danger">0Mbps</p>
+                    <button type="button" class="btn btn-danger">Выкл.</button>
+                </div>
             </div>
 
-            <div>
-                <p class="fs-6 lh-1 text-center bg-success">4</p>
-                <p class="fs-6 lh-1">Бабуин Василий Николаевич (8296)</p>
-                <p class="fs-6 lh-1 text-secondary">пр. Лесной 20, кв.99</p>
-                <p class="fs-6 lh-1 text-success">100Mbps</p>
-                <button type="button" class="btn btn-light">Вкл.</button>
+            <div class="card" style="width: 8rem;">
+                <div>
+                    <p class="fs-6 lh-1 text-center bg-success">4</p>
+                    <p class="fs-6 lh-1">Бабуин Иван Петрович(3500)</p>
+                </div>
+                <div>
+                    <p class="fs-6 lh-1 text-secondary">пр. Лесной 20, кв.99</p>
+                    <p class="fs-6 lh-1 text-success">100Mbps</p>
+                    <button type="button" class="btn btn-success">Вкл.</button>
+                </div>
             </div>
 
-            <div>
-                <p class="fs-6 lh-1 text-center bg-success">5</p>
-                <p class="fs-6 lh-1">Василиса Фролова (8296)</p>
-                <p class="fs-6 lh-1 text-secondary">пр. Лесной 20, кв.100</p>
-                <p class="fs-6 lh-1 text-success">100Mbps</p>
-                <button type="button" class="btn btn-light">Вкл.</button>
+            <div class="card" style="width: 8rem;">
+                <div>
+                    <p class="fs-6 lh-1 text-center bg-success">5</p>
+                    <p class="fs-6 lh-1">Василиса Фролова (8296)</p>
+                </div>
+                <div>
+                    <p class="fs-6 lh-1 text-secondary">пр. Лесной 20, кв.100</p>
+                    <p class="fs-6 lh-1 text-success">100Mbps</p>
+                    <button type="button" class="btn btn-success">Вкл.</button>
+                </div>
             </div>
 
-            <div>
-                <p class="fs-6 lh-1 text-center bg-danger">6</p>
-                <p class="fs-6 lh-1">Настя Иванова (8296)</p>
-                <p class="fs-6 lh-1 text-secondary">пр. Лесной 20, кв.101</p>
-                <p class="fs-6 lh-1 text-danger">0Mbps</p>
-                <button type="button" class="btn btn-light">Выкл.</button>
+            <div class="card" style="width: 8rem;">
+                <div>
+                    <p class="fs-6 lh-1 text-center bg-danger">6</p>
+                    <p class="fs-6 lh-1">Настя Иванова (8296)</p>
+                </div>
+                <div>
+                    <p class="fs-6 lh-1 text-secondary">пр. Лесной 20, кв.101</p>
+                    <p class="fs-6 lh-1 text-danger">0Mbps</p>
+                    <button type="button" class="btn btn-danger">Выкл.</button>
+                </div>
+
             </div>
 
-            <div>
-                <p class="fs-6 lh-1 text-center bg-danger">7</p>
-                <p class="fs-6 lh-1">Настя Иванова (8296)</p>
-                <p class="fs-6 lh-1 text-secondary">пр. Лесной 20, кв.101</p>
-                <p class="fs-6 lh-1 text-danger">0Mbps</p>
-                <button type="button" class="btn btn-light">Выкл.</button>
+            <div class="card" style="width: 8rem;">
+                <div>
+                    <p class="fs-6 lh-1 text-center bg-danger">7</p>
+                    <p class="fs-6 lh-1">Настя Иванова (8296)</p>
+                </div>
+                <div>
+                    <p class="fs-6 lh-1 text-secondary">пр. Лесной 20, кв.101</p>
+                    <p class="fs-6 lh-1 text-danger">0Mbps</p>
+                    <button type="button" class="btn btn-danger">Выкл.</button>
+                </div>
             </div>
 
-            <div>
-                <p class="fs-6 lh-1 text-center bg-danger">8</p>
-                <p class="fs-6 lh-1">Настя Иванова (8296)</p>
-                <p class="fs-6 lh-1 text-secondary">пр. Лесной 20, кв.101</p>
-                <p class="fs-6 lh-1 text-danger">0Mbps</p>
-                <button type="button" class="btn btn-light">Выкл.</button>
+            <div class="card" style="width: 8rem;">
+                <div>
+                    <p class="fs-6 lh-1 text-center bg-danger">8</p>
+                    <p class="fs-6 lh-1">Настя Иванова (8296)</p>
+                </div>
+                <div>
+                    <p class="fs-6 lh-1 text-secondary">пр. Лесной 20, кв.101</p>
+                    <p class="fs-6 lh-1 text-danger">0Mbps</p>
+                    <button type="button" class="btn btn-danger">Выкл.</button>
+                </div>
             </div>
 
-            <div>
-                <p class="fs-6 lh-1 text-center bg-success">9</p>
-                <p class="fs-6 lh-1">Настя Иванова (8296)</p>
-                <p class="fs-6 lh-1 text-secondary">пр. Лесной 20, кв.101</p>
-                <p class="fs-6 lh-1 text-success">100Mbps</p>
-                <button type="button" class="btn btn-light">Вкл.</button>
+            <div class="card" style="width: 8rem;">
+                <div>
+                    <p class="fs-6 lh-1 text-center bg-success">9</p>
+                    <p class="fs-6 lh-1">Настя Иванова (8296)</p>
+                </div>
+                <div>
+                    <p class="fs-6 lh-1 text-secondary">пр. Лесной 20, кв.101</p>
+                    <p class="fs-6 lh-1 text-success">100Mbps</p>
+                    <button type="button" class="btn btn-success">Вкл.</button>
+                </div>
             </div>
 
         </div>
 
     </div>
-
 
 
 
